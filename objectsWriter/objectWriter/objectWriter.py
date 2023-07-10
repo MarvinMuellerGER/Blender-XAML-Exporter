@@ -1,8 +1,8 @@
 # Local imports
-from .geometryWriter import GeomeryWriter
-from .materialWriter import MaterialWriter
+from .geometryWriter.geometryWriter import GeomeryWriter
+from .materialWriter.materialWriter import MaterialWriter
 from .mainObjectWriter import MainObjectWriter
-from .tabChange import TabChange
+from ...tabs.tabChange import TabChange
 
 class ObjectWriter:
     def __init__(self, writersManager, namesCollector):

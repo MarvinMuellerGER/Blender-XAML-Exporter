@@ -1,5 +1,5 @@
 # Local imports
-from .colorHexConverter import ColorHexConverter
+from ..colors.colorHexConverter import ColorHexConverter
 
 class ColorsCollector:
     def __init__(self):

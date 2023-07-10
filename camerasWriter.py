@@ -2,7 +2,7 @@ import bpy
 import mathutils
 
 # Local imports
-from .tabChange import TabChange
+from .tabs.tabChange import TabChange
 
 class CamerasWriter:
     def __init__(self, writersManager):

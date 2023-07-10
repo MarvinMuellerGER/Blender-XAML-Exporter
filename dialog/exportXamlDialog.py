@@ -4,7 +4,7 @@ from bpy.props import StringProperty, BoolProperty
 from bpy.types import Operator
 
 # Local imports
-from .xamlExporter import XamlExporter
+from ..xamlExporter import XamlExporter
 
 # Saves 3 XAML files (one main file, one for geometries and one for materials)
 class ExportXamlDialog(Operator, ExportHelper):

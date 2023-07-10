@@ -2,7 +2,7 @@ import bpy
 import mathutils
 
 # Local imports
-from .colorHexConverter import ColorHexConverter
+from ...colors.colorHexConverter import ColorHexConverter
 
 class LightsWriter:
     def __init__(self, writersManager):

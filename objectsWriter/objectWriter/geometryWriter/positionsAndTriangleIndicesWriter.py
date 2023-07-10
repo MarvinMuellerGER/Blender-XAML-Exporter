@@ -1,6 +1,6 @@
 # Local imports
-from .pointWriter import PointWriter
-from .convertedPointWriter import ConvertedPointWriter
+from .pointWriters.pointWriter import PointWriter
+from .pointWriters.convertedPointWriter import ConvertedPointWriter
 
 class PositionsAndTriangleIndicesWriter:
     def __init__(self, writer):

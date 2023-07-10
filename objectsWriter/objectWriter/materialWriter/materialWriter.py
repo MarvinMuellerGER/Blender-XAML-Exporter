@@ -1,6 +1,6 @@
 # Local imports
-from .colorsCollector import ColorsCollector
-from .tabChange import TabChange
+from ....collectors.colorsCollector import ColorsCollector
+from ....tabs.tabChange import TabChange
 
 class MaterialWriter:
     def __init__(self, writersManager, namesCollector):

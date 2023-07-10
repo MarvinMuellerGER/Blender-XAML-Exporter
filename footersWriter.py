@@ -1,5 +1,5 @@
 # Local imports
-from .tabChange import TabChange
+from .tabs.tabChange import TabChange
 
 class FootersWriter:
     def __init__(self, writersManager):

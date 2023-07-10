@@ -1,17 +1,17 @@
 # Local imports
-from .filesCollector import FilesCollector
-from .writersManager import WritersManager
-from .filesManager import FilesManager
+from .files.filesCollector import FilesCollector
+from .xamlWriters.xamlWritersManager import xamlWritersManager
+from .files.filesManager import FilesManager
 from .headersWriter import HeadersWriter
 from .mainResourcesWriter import MainResourcesWriter
 from .camerasWriter import CamerasWriter
-from .objectsWriter import ObjectsWriter
+from .objectsWriter.objectsWriter import ObjectsWriter
 from .footersWriter import FootersWriter
 
 class XamlExporter:
     def __init__(self):
         self.filesCollector = FilesCollector()
-        self.writersManager = WritersManager()
+        self.writersManager = xamlWritersManager()
         self.filesManager = FilesManager(self.filesCollector, self.writersManager)
         self.headersWriter = HeadersWriter(self.writersManager)
         self.mainResourcesWriter = MainResourcesWriter(self.writersManager, self.filesCollector)

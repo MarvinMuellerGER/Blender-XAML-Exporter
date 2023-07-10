@@ -1,9 +1,9 @@
 # Local imports
-from .namesCollector import NamesCollector
-from .objectWriter import ObjectWriter
-from .lightsWriter import LightsWriter
-from .objectsCollector import ObjectsCollector
-from .tabChange import TabChange
+from ..collectors.namesCollector import NamesCollector
+from .objectWriter.objectWriter import ObjectWriter
+from .lightsWriter.lightsWriter import LightsWriter
+from ..collectors.objectsCollector import ObjectsCollector
+from ..tabs.tabChange import TabChange
 
 class ObjectsWriter:
     def __init__(self, writersManager):

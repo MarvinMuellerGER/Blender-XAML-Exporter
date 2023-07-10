@@ -1,5 +1,5 @@
 # Local imports
-from .convertedPointWriter import ConvertedPointWriter
+from .pointWriters.convertedPointWriter import ConvertedPointWriter
 
 class NormalsWriter:
     def __init__(self, writer):

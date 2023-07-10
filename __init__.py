@@ -17,9 +17,9 @@ bl_info = {
 import bpy
 
 # Local imports
-from .exportXamlDialog import ExportXamlDialog
-from .xamlExportSettingsInclude import XamlExportSettingsInclude
-from .xamlExportSettingsTransform import XamlExportSettingsTransform
+from .dialog.exportXamlDialog import ExportXamlDialog
+from .dialog.xamlExportSettingsInclude import XamlExportSettingsInclude
+from .dialog.xamlExportSettingsTransform import XamlExportSettingsTransform
 
 def menu_func_export(self, context):
     self.layout.operator(ExportXamlDialog.bl_idname, text="XAML Viewport3D (.xaml)")

@@ -1,9 +1,9 @@
 # Local imports
 from .xamlWriter import XamlWriter
-from .tabStringManager import TabStringManager
-from .tabChange import TabChange
+from ..tabs.tabStringManager import TabStringManager
+from ..tabs.tabChange import TabChange
 
-class WriterWithTabs:
+class XamlWriterWithTabs:
     def __init__(self):
         self.writer = XamlWriter()
         self.tab_string_manager = TabStringManager()
